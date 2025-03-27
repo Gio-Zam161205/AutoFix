@@ -1,41 +1,19 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
-  /**
-   * colors
-   */
 
-  --international-orange-engineering: hsl(1, 91%, 37%);
-  --cadet-blue-creyola: hsl(222, 14%, 69%);
-  --oxford-blue-1: hsl(222, 47%, 15%);
-  --oxford-blue-2: hsl(222, 44%, 14%);
-  --oxford-blue-3: hsl(222, 50%, 11%);
-  --sonic-silver: hsl(0, 0%, 44%);
-  --space-cadet: hsl(222, 44%, 18%);
-  --pastel-pink: hsl(1, 53%, 75%);
-  --eerie-black: hsl(0, 0%, 15%);
-  --light-gray: hsl(0, 0%, 80%);
-  --white: hsl(0, 0%, 100%);
+   --international-orange-engineering: hsl(30, 100%, 50%);
+   --cadet-blue-creyola: hsl(145, 60%, 55%); 
+   --oxford-blue-1: hsl(0, 0%, 20%);
+   --oxford-blue-2: hsl(0, 0%, 30%);
+   --oxford-blue-3: hsl(0, 0%, 40%);
+   --sonic-silver: hsl(35, 20%, 60%);
+   --space-cadet: hsl(200, 50%, 40%); 
+   --pastel-pink: hsl(340, 70%, 75%);
+   --eerie-black: hsl(0, 0%, 10%);
+   --light-gray: hsl(0, 0%, 85%);
+   --white: hsl(0, 0%, 100%); 
 
-  /**
-   * typography
-   */
-
+ 
   --ff-chakra-petch: 'Chakra Petch', sans-serif;
   --ff-mulish: 'Mulish', sans-serif;
   
@@ -50,41 +28,22 @@
   --fw-600: 600;
   --fw-700: 700;
 
-  /**
-   * spacing
-   */
 
   --section-padding: 60px;
 
-  /**
-   * box shadow
-   */
 
   --shadow: 0px 0px 100px 0px hsl(216, 9%, 90%);
 
-  /**
-   * border radius
-   */
+
 
   --radius-pill: 100px;
   --radius-circle: 50%;
 
-  /**
-   * transition
-   */
 
   --transition: 0.25s ease;
   --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
 
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *,
 *::before,
@@ -139,14 +98,6 @@ body {
 ::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
 
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
-
-
-
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .container { padding-inline: 16px; }
 
@@ -307,13 +258,6 @@ body {
 .has-scrollbar::-webkit-scrollbar-button { width: 15%; }
 
 
-
-
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
-
 .header .btn { display: none; }
 
 .header {
@@ -387,13 +331,6 @@ body {
   color: var(--international-orange-engineering);
 }
 
-
-
-
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
 .hero {
   position: relative;
   padding-block-start: calc(var(--section-padding) + 70px);
@@ -428,12 +365,6 @@ body {
 
 
 
-
-
-/*-----------------------------------*\
-  #SERVICE
-\*-----------------------------------*/
-
 .service-banner { display: none; }
 
 .service { text-align: center; }
@@ -457,12 +388,6 @@ body {
 .service .btn { margin-inline: auto; }
 
 
-
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
 
 .about {
   background-color: var(--space-cadet);
@@ -503,12 +428,6 @@ body {
 
 
 
-
-
-/*-----------------------------------*\
-  #WORK
-\*-----------------------------------*/
-
 .work .container { padding-inline: 0; }
 
 .work .section-title { margin-block-end: 24px; }
@@ -548,13 +467,6 @@ body {
   border-radius: var(--radius-circle);
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
 
 .footer { color: var(--cadet-blue-creyola); }
 
@@ -626,26 +538,10 @@ body {
 
 
 
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for large than 575px screen
- */
-
 @media (min-width: 575px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
 
   :root {
 
-    /**
-     * typography
-     */
 
     --fs-2: 4rem;
     --fs-3: 2.8rem;
@@ -653,11 +549,6 @@ body {
 
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 540px;
@@ -668,12 +559,6 @@ body {
   .section-subtitle { --fs-5: 1.6rem; }
 
   .h2 { font-weight: var(--fw-700); }
-
-
-
-  /**
-   * HERO
-   */
 
   .hero .container { max-width: unset; }
 
@@ -686,9 +571,6 @@ body {
 
 
 
-  /**
-   * SERVICE
-   */
 
   .service .section-title { margin-block-end: 30px; }
 
@@ -699,11 +581,6 @@ body {
     margin-block-end: 40px;
   }
 
-  
-
-  /**
-   * ABOUT
-   */
 
   .about-list {
     grid-template-columns: 1fr 1fr;
@@ -714,17 +591,9 @@ body {
 
 
 
-  /**
-   * WORK
-   */
-
   .scrollbar-item { min-width: calc(50% - 15px); }
 
 
-
-  /**
-   * FOOTER
-   */
 
   .footer-top {
     position: relative;
@@ -746,21 +615,11 @@ body {
 
 
 
-/**
- * responsive for large than 768px screen
- */
-
 @media (min-width: 768px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
 
   :root {
 
-    /**
-     * typography
-     */
+
 
     --fs-1: 4rem;
     --fs-2: 5rem;
@@ -769,10 +628,6 @@ body {
   }
 
 
-
-  /**
-   * REUSED STYLE
-   */
 
   .container,
   .hero-content { max-width: 720px; }
@@ -788,19 +643,12 @@ body {
 
 
 
-  /**
-   * HERO
-   */
-
   .hero { --section-padding: 120px; }
 
   .hero .section-text { margin-block-end: 30px; }
 
 
 
-  /**
-   * SERVICE
-   */
 
   .service-banner {
     display: block;
@@ -818,11 +666,6 @@ body {
     transform-origin: top;
   }
 
-
-
-  /**
-   * ABOUT
-   */
    
   .about-banner { max-width: max-content; }
 
@@ -832,10 +675,6 @@ body {
   .about .section-text { max-width: 520px; }
 
 
-
-  /**
-   * FOOTER
-   */
 
   .footer-top .container { grid-template-columns: 1fr 0.9fr 0.9fr; }
 
@@ -847,39 +686,22 @@ body {
 
 
 
-/**
- * responsive for large than 992px screen
- */
-
 @media (min-width: 992px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+
 
   :root {
 
-    /**
-     * typography
-     */
 
     --fs-2: 4.4rem;
     --fs-3: 3.8rem;
     --fs-4: 2.2rem;
 
-    /**
-     * spacing
-     */
 
     --section-padding: 100px;
 
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 960px; }
 
@@ -887,10 +709,6 @@ body {
   .card-text { font-size: 1.8rem; }
 
 
-
-  /**
-   * HEADER
-   */
 
   .nav-toggle-btn { display: none; }
 
@@ -934,10 +752,6 @@ body {
 
 
 
-  /**
-   * HERO
-   */
-
   .hero {
     text-align: left;
     padding-block-end: 80px;
@@ -954,11 +768,6 @@ body {
 
   .hero-banner img { width: 55%; }
 
-
-
-  /**
-   * SERVICE
-   */
 
   .service-card .card-text {
     padding-inline: 25px;
@@ -978,11 +787,6 @@ body {
     width: 210%;
   }
 
-
-
-  /**
-   * ABOUT
-   */
 
   .about {
     position: relative;
@@ -1021,11 +825,6 @@ body {
   }
 
 
-
-  /**
-   * WORK
-   */
-
   .has-scrollbar { overflow-x: visible; }
 
   .scrollbar-item { min-width: calc(33.33% - 20px); }
@@ -1034,34 +833,15 @@ body {
 
 
 
-
-
-/**
- * responsive for large than 1200px screen
- */
-
 @media (min-width: 1200px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
 
   :root {
 
-    /**
-     * typography
-     */
 
     --fs-2: 5rem;
     --fs-3: 4.6rem;
 
   }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container,
   .hero .container { max-width: 1140px; }
@@ -1072,10 +852,6 @@ body {
 
 
 
-  /**
-   * HEADER
-   */
-
   .header { padding-block: 25px; }
 
   .logo img { width: 128px; }
@@ -1084,12 +860,6 @@ body {
     font-size: unset;
     padding-block: 15px;
   }
-
-
-
-  /**
-   * HERO
-   */
 
   .hero { padding-block: 250px 180px; }
 
@@ -1103,10 +873,6 @@ body {
   .hero-banner img { width: 70%; }
 
 
-
-  /**
-   * SERVICE
-   */
 
   .service .section-title { max-width: 700px; }
 
@@ -1135,10 +901,6 @@ body {
 
 
 
-  /**
-   * WORK
-   */
-
   .work-card .card-btn {
     font-size: 2.4rem;
     width: 55px;
@@ -1146,10 +908,6 @@ body {
   }
 
 
-
-  /**
-   * FOOTER
-   */
 
   .footer-top { padding-block: 150px; }
 
@@ -1180,37 +938,20 @@ body {
 
 
 
-/**
- * responsive for large than 1400px screen
- */
-
 @media (min-width: 1400px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
 
   :root {
 
-    /**
-     * typography
-     */
 
     --fs-2: 6rem;
 
-    /**
-     * spacing
-     */
 
     --section-padding: 140px;
 
   }
 
 
-
-  /**
-   * REUSED STYLE
-   */
 
   :is(.header, .hero) .container { max-width: 1280px; }
 
@@ -1221,17 +962,9 @@ body {
 
 
 
-  /**
-   * HEADER
-   */
-
   .header .btn { padding: 18px 36px; }
 
 
-
-  /**
-   * HERO
-   */
 
   .hero { padding-block: 280px; }
 
@@ -1241,19 +974,10 @@ body {
 
 
 
-  /**
-   * ABOUT
-   */
-
   .about::before { width: 55%; }
 
   .about-banner .w-100 { width: 50%; }
 
-
-
-  /**
-   * FOOTER
-   */
 
   .footer-top .container { padding-inline-start: 20%; }
 
